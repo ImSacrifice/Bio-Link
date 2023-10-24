@@ -1,0 +1,171 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+width: 100%;
+height: 100%;
+cursor: url('images/mouse.png'), auto;
+box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-family: 'Varela Round', sans-serif;
+}
+
+.framework{
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('images/bg1.jpg');
+  background-position: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#clickanywhere {
+  background-color: #080808;
+  color: white;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 1);
+  font-size: 12px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  text-align: center;
+  justify-content: center;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0.95;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 50%;
+  top: 5%;
+  bottom: 5%;
+  max-width: 500px;
+  padding: .5rem;
+  margin: 0 auto;
+  border: 1px solid rgba(255, 255, 255, .3);
+  border-radius: 20px;
+  background-image: url('images/cardbg.jpg');
+  box-shadow: 0 4px 30px rgb(76, 0, 255);
+  backdrop-filter: blur(5px);
+}
+
+.profile-pic{
+  display: inline-block;
+  width: 130px;
+  height: 130px;
+  background-image: url('images/m.gif');
+  background-position: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  margin: 0 auto 1rem auto;
+  padding: 0;
+}
+
+.full-name, .profession, h3{
+  display: inline-block;
+  margin: 0 auto;
+  width: fit-content;
+  height: fit-content;
+  text-align: center;
+  background: transparent;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.full-name{
+    font-size: 26px;
+    letter-spacing: 3px;
+}
+.profession{
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+h3{
+  font-size: 15px;
+  font-weight: lighter;
+  margin-top: 2rem;
+}
+
+.social-media-icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  height: fit-content;
+  width: fit-content;
+  margin: 0 auto 1.5rem auto;
+}
+
+a{
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0;
+  height: fit-content;
+  width: fit-content;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+a > img{
+  width: 60px;
+  height: auto;
+  cursor: pointer;
+  border-radius: 50%;
+}
+a > img:hover{
+  background: linear-gradient(0deg, #5500ff32 0%, #ffffff80 100%);
+}
+
+.btn{
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  padding: .8rem;
+  margin: 0 auto 1rem auto;
+  border: 1px solid #fff;
+  border-radius: 25px;
+  background: linear-gradient(-50deg, #6400f944 70%, #0a0a0a 100%);
+  color: #000000;
+  box-shadow:2px 2px 3px rgba(232, 232, 232, 0.801);
+  transition: .3s;
+}
+
+.btn:hover{
+  transform: scale(1.1);
+}
+
+
+@media screen and (max-width:335px){
+  a > img{
+    max-width: 45px;
+  }
+}
+
+
+
